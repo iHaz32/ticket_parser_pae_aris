@@ -1,4 +1,4 @@
-import { stadiumData } from './data.js';
+import { stadiumData } from './data.js'; // Import stadium data
 const eventId = "167bebb6-7f24-4db7-9a71-eddc456d18e7"; // Requires manual change
 
 // Initialize output array
