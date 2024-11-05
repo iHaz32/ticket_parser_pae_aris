@@ -1,3 +1,5 @@
+import fs from 'fs'; // Import file system
+
 import { stadiumData } from './data.js'; // Import stadium data
 const eventId = "167bebb6-7f24-4db7-9a71-eddc456d18e7"; // Requires manual change
 
@@ -79,5 +81,8 @@ async function fetchSectionData() {
   );
 }
 
-// Call the async function
-fetchSectionData();
+fetchSectionData().then(() => {
+  // Save the output to a JSON file
+  fs.writeFileSync("output.json", JSON.stringify(output, null, 2), "utf-8");
+  console.log("Data saved to output.json");
+});
