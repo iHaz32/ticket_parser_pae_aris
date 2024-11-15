@@ -2,3 +2,7 @@ node_modules
 .env
 data.js
 output.json
+bar_plot_gate_contribution_absolute.png
+bar_plot_sold_available_black.png
+pie_chart_total_black.png
+stem_plot_sold_percentage_black.png
