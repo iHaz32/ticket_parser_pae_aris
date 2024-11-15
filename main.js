@@ -1,7 +1,9 @@
 import fs from 'fs'; // Import file system
-
+import dotenv from 'dotenv'; // Import dotenv
 import { stadiumData } from './data.js'; // Import stadium data
-const eventId = "167bebb6-7f24-4db7-9a71-eddc456d18e7"; // Requires manual change
+
+dotenv.config(); // Load environment variables from the .env file
+const eventId = process.env.EVENT_ID; // Requires manual change
 
 // Initialize output array
 let output = stadiumData.map((gateData) => ({
